@@ -42,13 +42,19 @@ public class StudentGroup implements Iterable<Student>, Comparable<StudentGroup>
         return new StudentIterator(group);
 
     }
+//    @Override
+//    public String toString() {
+//        return "StudentGroup{" +
+//                "group=" + group +
+//                ", idGroup=" + idGroup +
+//                '}';
+//    }
+
     @Override
     public String toString() {
-        return "StudentGroup{" +
-                "group=" + group +
-                ", idGroup=" + idGroup +
-                '}';
+        return "StudentGroup: " + idGroup + ", number of students: " + group.size() + ", " + group;
     }
+
     // @Override
 
     // public Iterator<Student> iterator() {

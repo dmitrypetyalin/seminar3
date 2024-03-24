@@ -12,7 +12,7 @@ import java.util.List;
  * @date 23.03.2024 9:37
  */
 public class App {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args)  {
 
         Student s1 = new Student("Иван", 25);
         Student s2 = new Student("Игорь", 23);
@@ -57,20 +57,20 @@ public class App {
                 new Student("Bill", 21),
                 new Student("Ronald", 23)), 5680);
 
-        StudentSteam steam = new StudentSteam(Arrays.asList(group5830, group5520, group5680));
+        StudentSteam steam = new StudentSteam(Arrays.asList(group5830, group5520, group5680), 1);
 
-        for (StudentGroup group : steam) {
-            System.out.println(group.getIdGroup() + ": " + group.getGroup());
-        }
+        System.out.println(steam);
 
         Collections.sort(steam.getGroups());
 
         System.out.println("=========================================================");
 
-        for (StudentGroup group : steam) {
-            System.out.println(group.getIdGroup() + ": " + group.getGroup());
-        }
+        System.out.println(steam);
 
+        System.out.println("=========================================================");
 
+//        Collections.sort();
+
+        System.out.println(steam);
     }
 }
